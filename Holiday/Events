@@ -6,22 +6,70 @@
  * You can replace these base64 strings with specific images generated
  * for each event/holiday if desired.
  */
+
+
 const eventsAndHolidaysData = [
   {
     name: "New Year's Day",
     date: "2026-01-01",
     description: "A public holiday celebrating the start of the new year.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
+    imageUrl: "https://drive.google.com/file/d/12weJSPf3c6c1_Wl24PcRexsCz-6aRHkv/view?usp=drivesdk
     type: "holiday"
   },
   {
     name: "Valentine's Day",
     date: "2026-02-14",
     description: "A day to celebrate love and affection.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
+    imageUrl: "https://drive.google.com/file/d/136egsASJ4FiwPgyoDT-zRJEN3O7KLV5U/view?usp=drivesdk
     type: "event"
   },
   {
+    name: "PUP Parañaque NSTP Officers Lead Campus Greening Efforts",
+    date: "2025-05-19",
+   description : "On May 19, PUP Parañaque NSTP officers launched an environmental initiative to restore and maintain the campus garden, promoting sustainability and environmental awareness.",
+     imageurl: https://drive.google.com/file/d/12f1qIEyWQe8laYotMPXZtxIwEvmIrClq/view?usp=drivesdk
+    type: event
+  },
+  {
+    name : Polytechnic University of the Philippines – Parañaque City Campus 14th Founding Anniversary,
+    date: 2025-03-31,
+    description: The Polytechnic University of the Philippines – Parañaque City Campus is celebrating its 14th Founding Anniversary today with an exciting showcase of talent, competitions, and activities.
+    imageUrl: https://drive.google.com/file/d/12XYREVU1KE8-NUQN_9mH-DFdZAEMQGWF/view?usp=drivesdk
+    type: event
+  }
+]
+{
+    name: Mr. and Ms. PUP Parañaque 2025,
+    date: 2025-04-05,
+    description: The Mr. and Ms. PUP Parañaque 2025 event, marking the 14th Founding Anniversary, is happening today at Sto. Niño National High School Gymnasium.
+    imageUrl: https://drive.google.com/file/d/12Tww8lv4FyCT590iv8xBg_im0jEzvXbZ/view?usp=drivesdk
+    type: event
+}
+
+{
+    name: PUP College Entrance Test (CET),
+    date: 2025-05-18,
+    description: The College Entrance Test (CET) examinees of the Polytechnic University of the Philippines – Parañaque City Campus are now in assembly.
+    imageUrl: https://drive.google.com/file/d/12Op2lCvyVpkX8hSul1Ie6pobNpBKA0Ly/view?usp=drivesdk
+    type: event
+}
+
+{
+    name: Araw ng Kalayaan (Independence Day),
+    date: 2025-06-12,
+    description: Today marks the 127th anniversary of Philippine Independence, a day to reflect on the past and hope for the future, inspiring us to continue standing with dignity for our nation and true unity.
+    imageUrl: https://drive.google.com/file/d/12jVHFzFf5ZTirvsFxJ6AV9fTx-QLrv2_/view?usp=drivesdk
+    type: holiday
+}
+{
+    name: Eid Mubarak,
+    date: 2025-05-06,
+    description: Eid al-Fitr, marking the end of Ramadan, is a significant Islamic celebration of fasting, prayer, and reflection.
+    imageUrl: https://drive.google.com/file/d/12X9lt8Ej9VeD1ADuAK82IR-bfOmlV21o/view?usp=drivesdk
+    type: holiday
+}
+
+
     name: "International Women's Day",
     date: "2026-03-08",
     description: "A global day celebrating the social, economic, cultural, and political achievements of women.",
@@ -32,35 +80,21 @@ const eventsAndHolidaysData = [
     name: "Easter Sunday",
     date: "2026-04-05", // Placeholder date for a common Easter date
     description: "A Christian holiday celebrating the resurrection of Jesus.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
+    imageUrl: https://drive.google.com/file/d/131XMHs13NeUgHsoaYTbbiF1BdjNwVefK/view?usp=drivesdk
     type: "holiday"
   },
   {
     name: "Labor Day",
     date: "2026-05-01", // Common international Labor Day
     description: "A public holiday celebrating the achievements of workers.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
+    imageUrl: https://drive.google.com/file/d/12YK8M5wws70VXFhJbtvz_SPaBi-QND6N/view?usp=drivesdk
     type: "holiday"
-  },
-  {
-    name: "Graduation Ceremony (University)",
-    date: "2025-06-28", // Adjusted for a typical university graduation
-    description: "Annual ceremony for university graduates.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
-    type: "event"
-  },
-  {
-    name: "Back to School",
-    date: "2025-08-25", // Typical August date for school reopening
-    description: "Schools reopen for a new academic year.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
-    type: "event"
   },
   {
     name: "Halloween",
     date: "2025-10-31",
     description: "A popular holiday known for costumes, trick-or-treating, and spooky decorations.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
+    imageUrl: https://drive.google.com/file/d/131DXBXsZgzTAH6nd2OcV4OlZ26j3yPgw/view?usp=drivesdk
     type: "holiday"
   },
   {
@@ -70,7 +104,7 @@ const eventsAndHolidaysData = [
     name: "Christmas Day",
     date: "2025-12-25",
     description: "A major Christian holiday celebrating the birth of Jesus.",
-    imageUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABz5qcWaAAAADElEQVR42mP8z8AAAAAIgAOSuS/VIAAAAABJRU5ErkJggg==", // Generic grey square
+    imageUrl: https://drive.google.com/file/d/13BXbGSNpO_4FVyB_dSit7ONr6CmEsNUQ/view?usp=drivesdk
     type: "holiday"
   }
 ];
